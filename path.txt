@@ -1,0 +1,1 @@
+D:\OSPanel\domains\packages\packages\smetaniny\sm-laravel-admin\resources\js\Admin.jsx

@@ -4,7 +4,7 @@ namespace Smetaniny\SmLaravelAdmin;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelAdminServiceProvider extends ServiceProvider
+class SmLaravelAdminServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -13,10 +13,10 @@ class LaravelAdminServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'smetaniny');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'smetaniny');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
+         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'smetaniny');
+         $this->loadViewsFrom(__DIR__.'/../resources/views', 'smetaniny');
+         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+         $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
@@ -35,7 +35,7 @@ class LaravelAdminServiceProvider extends ServiceProvider
 
         // Register the service the package provides.
         $this->app->singleton('sm-laravel-admin', function ($app) {
-            return new LaravelAdmin;
+            return new SmLaravelAdmin;
         });
     }
 

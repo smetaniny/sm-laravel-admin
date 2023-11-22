@@ -1,0 +1,34 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     * Миграция связей
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('role_users', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('role_id')->constrained('roles')->onDelete('cascade')->comment('ID роли');
+            $table->foreignId('user_admin_id')->constrained('users_admin')->onDelete('cascade')->comment('ID пользователя');
+            $table->timestamps();
+        });
+
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('role_user');
+    }
+};
