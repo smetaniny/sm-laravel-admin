@@ -1,7 +1,6 @@
-import * as React from 'react';
-import {Fragment} from 'react';
+import React, {Fragment} from 'react';
 import {List, TextField, DatagridConfigurable} from 'react-admin';
-import {ListActions, OrderFilters} from "@/Pages/Admin/layout/BaseList";
+import {ListActions, OrderFilters} from "../../layout/BaseList";
 import {Divider} from "@mui/material";
 
 const TvParamsList = (props) => (

@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {Edit, SimpleForm, useNotify, useRefresh} from "react-admin";
-import dataProvider from "@/Pages/Admin/dataProvider";
-import TvParamsCategoriesCard from "@/Pages/Admin/Resource/TvParamsCategories/TvParamsCategoriesCard";
-
+import dataProvider from "../../dataProvider";
+import TvParamsCategoriesCard from "../../Resource/TvParamsCategories/TvParamsCategoriesCard";
 
 const TvParamsCategoriesEdit = () => {
     const [error, setError] = useState(null);

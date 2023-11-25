@@ -1,14 +1,12 @@
-import * as React from 'react';
-import {useState} from "react";
-import dataProvider from "@/Pages/Admin/dataProvider";
+import React, {useState} from 'react';
+import dataProvider from "../../dataProvider";
 import {
     Create,
     SimpleForm,
     useNotify, useRedirect,
 } from 'react-admin';
 import {Box} from "@mui/material";
-import TvParamsCard from "@/Pages/Admin/Resource/TvParams/TvParamsCard";
-
+import TvParamsCard from "../../Resource/TvParams/TvParamsCard";
 
 const TvParamsCreate = (props) => {
     const [error, setError] = useState(null);

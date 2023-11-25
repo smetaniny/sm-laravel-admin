@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Grid} from "@mui/material";
 import {FormDataConsumer, useRecordContext} from "react-admin";
-import TvAceEditor from "@/Pages/Admin/Resource/Pages/TvAceEditor";
+import TvAceEditor from "../../Resource/Pages/TvAceEditor";
 import {ImageInput} from 'react-admin';
 
 

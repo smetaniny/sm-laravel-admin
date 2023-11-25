@@ -1,9 +1,8 @@
 import React from 'react';
 import {DatagridConfigurable, List, TextField,} from "react-admin";
 import {Fragment} from "react";
-import {ListActions, OrderFilters} from "@/Pages/Admin/layout/BaseList";
+import {ListActions, OrderFilters} from "../../layout/BaseList";
 import {Divider} from "@mui/material";
-
 
 const TvParamsCategoriesList = (props) => (
     <List

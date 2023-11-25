@@ -1,9 +1,8 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import {Create, SimpleForm, useNotify, useRedirect, useRefresh} from 'react-admin';
 import {Box,} from '@mui/material';
-import dataProvider from "@/Pages/Admin/dataProvider";
-import {useState} from "react";
-import PageCard from "@/Pages/Admin/Resource/Pages/PageCard";
+import dataProvider from "../../dataProvider";
+import PageCard from "../../Resource/Pages/PageCard";
 
 
 const PagesCreate = (props) => {

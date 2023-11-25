@@ -1,6 +1,5 @@
-@import "../../../Scss/variables";
-@import "../../../Scss/mixins";
-
+@import "./variables";
+@import "./mixins";
 
 h1 {
     @include font-inter(bold, 40px, 1.1);

@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Fragment} from 'react';
 import {DatagridConfigurable, DateField, List, TextField} from 'react-admin';
 import {Divider} from '@mui/material';
-import {ListActions, OrderFilters} from "@/Pages/Admin/layout/BaseList";
+import {ListActions, OrderFilters} from "../../layout/BaseList";
 
 
 const TemplatesList = (props) => (

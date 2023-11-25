@@ -1,4 +1,4 @@
-import {URL_API} from "@/Pages/Admin/settings";
+import {URL_API} from "./settings";
 import queryString from 'query-string';
 import {Inertia} from "@inertiajs/inertia";
 

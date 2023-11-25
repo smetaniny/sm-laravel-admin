@@ -2,7 +2,8 @@ import * as React from 'react';
 import {Create, SimpleForm, useRedirect, useNotify} from 'react-admin';
 import {Box} from '@mui/material';
 import {useState} from "react";
-import TemplatesCard from "@/Pages/Admin/Resource/Templates/TemplatesCard";
+import dataProvider from "../../dataProvider.jsx";
+import TemplatesCard from "./TemplatesCard.jsx";
 
 const TemplatesCreate = (props) => {
     const [error, setError] = useState(null);

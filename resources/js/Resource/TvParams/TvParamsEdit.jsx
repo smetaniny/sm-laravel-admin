@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import {Edit, SimpleForm, useRefresh, useNotify, SaveButton, Toolbar, ListButton} from 'react-admin';
-import dataProvider from "@/Pages/Admin/dataProvider";
-import TvParamsCard from "@/Pages/Admin/Resource/TvParams/TvParamsCard";
+import {Edit, SimpleForm, useRefresh, useNotify} from 'react-admin';
+import dataProvider from "../../dataProvider";
+import TvParamsCard from "../../Resource/TvParams/TvParamsCard";
 
 const TvParamsEdit = () => {
     const [error, setError] = useState(null);

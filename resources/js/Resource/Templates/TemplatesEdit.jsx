@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import {Edit, useRecordContext, useNotify, SimpleForm, useRefresh, Toolbar, SaveButton, ListButton,} from 'react-admin';
-import dataProvider from "@/Pages/Admin/dataProvider";
-import TemplatesCard from "@/Pages/Admin/Resource/Templates/TemplatesCard";
-
+import {Edit,  useNotify, SimpleForm, useRefresh} from 'react-admin';
+import dataProvider from "../../dataProvider";
+import TemplatesCard from "../../Resource/Templates/TemplatesCard";
 
 const TemplatesEdit = (props) => {
     const [error, setError] = useState(null);

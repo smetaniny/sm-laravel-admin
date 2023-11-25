@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {useState} from 'react';
-import {Edit, SimpleForm, useRefresh, useNotify, useRecordContext,} from 'react-admin';
-import PageCard from "@/Pages/Admin/Resource/Pages/PageCard";
-import dataProvider from "@/Pages/Admin/dataProvider";
+import {Edit, SimpleForm, useRefresh, useNotify, useRecordContext} from 'react-admin';
+import PageCard from "../../Resource/Pages/PageCard";
+import dataProvider from "../../dataProvider";
 
 
 const PagesEdit = () => {

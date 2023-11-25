@@ -19,7 +19,7 @@ import {
 } from 'react-admin';
 
 import Box from '@mui/material/Box';
-import LinkLoad from "@/Components/LinkLoad";
+import LinkLoad from "./Components/LinkLoad.jsx";
 
 const Login = () => {
     const [loading, setLoading] = useState(false);

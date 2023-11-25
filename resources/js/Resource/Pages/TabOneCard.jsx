@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid} from "@mui/material";
-import TextInputId from "@/Pages/Admin/Resource/Pages/TextInputId";
+import TextInputId from "../../Resource/Pages/TextInputId";
 import {
     AutocompleteInput,
     NumberInput,
@@ -8,11 +8,11 @@ import {
     TextInput,
     SelectInput, required, useRecordContext,
 } from "react-admin";
-import ParentInput from "@/Pages/Admin/Resource/Pages/ParentInput";
-import ResourceLinkField from "@/Pages/Admin/Resource/Pages/ResourceLinkField";
+import ParentInput from "../../Resource/Pages/ParentInput";
+import ResourceLinkField from "../../Resource/Pages/ResourceLinkField";
 import {useController} from "react-hook-form";
 import {createReactEditorJS} from 'react-editor-js';
-import {EDITOR_JS_TOOLS} from "@/Pages/Admin/tools";
+import {EDITOR_JS_TOOLS} from "../../tools";
 
 const ReactEditorJS = createReactEditorJS();
 

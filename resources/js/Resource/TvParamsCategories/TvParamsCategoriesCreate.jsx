@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Create, SimpleForm, TextInput, useNotify, useRedirect} from 'react-admin';
-import dataProvider from '@/Pages/Admin/dataProvider';
+import dataProvider from '../../dataProvider';
 import {Box, Card, CardContent, Grid} from "@mui/material";
 
 const TvParamsCategoriesCreate = ({...props}) => {

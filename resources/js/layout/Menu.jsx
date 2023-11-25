@@ -7,7 +7,7 @@ import {AiOutlineSetting} from 'react-icons/ai';
 import {MenuItemLink, useRedirect} from 'react-admin';
 import SubMenuParent from './SubMenuParent';
 import SubMenu from './SubMenu';
-import menuStore from "@/Pages/Admin/Stores/MenuStore";
+import menuStore from "../Stores/MenuStore";
 import {ListItemIcon, ListItemButton} from '@mui/material';
 import {FaFolderOpen, FaFolder, FaFile} from 'react-icons/fa';
 import {AiOutlineFileAdd, AiOutlineFileDone} from 'react-icons/ai'

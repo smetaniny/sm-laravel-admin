@@ -1,7 +1,7 @@
 import React from 'react';
 import {Grid} from "@mui/material";
-import {AutocompleteInput, ReferenceInput, useRecordContext} from "react-admin";
-import menuStore from "@/Pages/Admin/Stores/MenuStore";
+import {AutocompleteInput, useRecordContext} from "react-admin";
+import menuStore from "../../Stores/MenuStore";
 import {useLocation} from "react-router-dom";
 
 const ParentInput = ({flag, error}) => {

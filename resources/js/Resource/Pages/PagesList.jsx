@@ -4,22 +4,12 @@ import {
     DatagridConfigurable,
     DateField,
     List,
-    TextField, useRecordContext,
+    TextField
 } from 'react-admin';
 import {Divider} from '@mui/material';
-import {ListActions, OrderFilters} from "@/Pages/Admin/layout/BaseList";
-import menuStore from "@/Pages/Admin/Stores/MenuStore";
-
+import {ListActions, OrderFilters} from "../../layout/BaseList";
 
 const PagesList = (props) => {
-    const record = useRecordContext();
-    const {items, setItems} = menuStore();
-    console.log('record', record);
-// useEffect(() => {
-//     // Обновите данные в локальном хранилище после получения ответа
-//     setItems(record);
-// }, [record, setItems]);
-
     return <List
         {...props}
         filterDefaultValues={{status: 'ordered'}}

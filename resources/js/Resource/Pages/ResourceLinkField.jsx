@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 import {useRecordContext} from "react-admin";
-import {URL_API} from "@/Pages/Admin/settings";
+import {URL_API} from "../../settings";
 
 const ResourceLinkField = () => {
     const record = useRecordContext();
