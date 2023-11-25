@@ -1,7 +1,6 @@
-import {URL_API} from "./settings.jsx";
+import {URL_API} from "@/Pages/Admin/settings";
 import queryString from 'query-string';
 import {Inertia} from "@inertiajs/inertia";
-import axios from 'axios';
 
 const apiClient = axios.create({
     baseURL: URL_API,

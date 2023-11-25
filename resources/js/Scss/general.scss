@@ -1,0 +1,272 @@
+@import "../../../Scss/variables";
+@import "../../../Scss/mixins";
+
+
+h1 {
+    @include font-inter(bold, 40px, 1.1);
+    margin-bottom: 15px;
+
+    @include respond-to(isMobile) {
+        @include font-inter(bold, 24px, 1.1);
+    }
+}
+
+h2 {
+    @include font-inter(bold, 22px);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    @include font-inter(bold, 20px);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    @include font-inter(bold, 18px);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+h5 {
+    @include font-inter(normal, 16px);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+h6 {
+    @include font-inter(normal, 16px);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+body {
+    margin: 0 !important;
+}
+
+.ck-editor__editable {
+    min-height: 300px;
+    height: auto;
+}
+
+pre {
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.ce-block__content, .ce-toolbar__content {
+    width: 100%;
+    max-width: 100%;
+}
+
+.codex-editor__redactor {
+    //padding-bottom: 30px !important;
+}
+
+.css-mp7e1w-RaRichTextInput-root, .css-8l66u2-MuiStack-root-RaLabeled-root {
+    width: 100% !important;
+}
+
+.css-mp7e1w-RaRichTextInput-root, .css-1q1uhbr-RaRichTextInput-root {
+    align-items: flex-start !important;
+}
+
+.css-qyxyi3-MuiButtonBase-root-MuiListItem-root {
+    padding-left: 0 !important;
+}
+
+.css-1pnmrwp-MuiTypography-root {
+    margin-bottom: 10px !important;
+}
+
+.MuiGrid-item {
+    margin-bottom: 10px !important;
+}
+
+.colorInput .MuiInputBase-root,
+.colorInput .MuiFormLabel-root {
+    padding-left: 10px;
+}
+
+.colorInput .MuiFormGroup-root {
+    padding-left: 15px;
+}
+
+.colorInput .MuiFormHelperText-root {
+    display: none;
+}
+
+.MuiFormHelperText-root {
+    display: none;
+}
+
+.error-text {
+    color: #ed6c02;
+    font-size: 12px;
+    margin: 4px 15px 0;
+}
+
+.css-14m5vj2-MuiSnackbar-root-RaNotification-root .RaNotification-undo {
+    color: white !important;
+}
+
+
+.MuiCardContent-root {
+    width: 1100px;
+}
+
+.css-1uwir8t .RaToolbar-defaultToolbar {
+    width: 1100px;
+}
+
+.css-qmvuda-MuiToolbar-root-RaToolbar-root.RaToolbar-desktopToolbar {
+    max-width: 1100px !important;
+}
+
+.css-qmvuda-MuiToolbar-root-RaToolbar-root {
+    background-color: inherit !important;
+}
+
+.css-cveggr-MuiListItemIcon-root {
+    min-width: 20px !important;
+    height: 20px !important;
+}
+
+.add-icon,
+.edit-icon {
+    visibility: hidden !important;
+}
+
+
+.list-item-button:hover .add-icon,
+.list-item-button:hover .edit-icon {
+    visibility: visible !important;
+}
+
+
+.list-item-button .MuiListItemIcon-root {
+    align-items: flex-end;
+    justify-content: start;
+}
+
+.react-resizable-handle {
+    background-image: none !important;
+}
+
+.react-resizable-handle:after {
+    content: "\2194";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    color: #bdb3b3;
+}
+
+.subMenuLeft .MuiButtonBase-root {
+    font-size: 15px !important;
+    color: #cb2dc !important;
+    align-items: center;
+
+    & svg {
+        margin-right: 7px;
+    }
+}
+
+.whiteMenu {
+    color: white !important;
+}
+
+.css-qmvuda-MuiToolbar-root-RaToolbar-root.RaToolbar-desktopToolbar {
+    justify-content: space-between;
+}
+
+
+.css-1f8bwsm {
+    min-width: 20px !important;
+}
+
+.css-xhn3eo .MuiListItemIcon-root {
+    min-width: 20px !important;
+}
+
+.css-1elqa6g-MuiButtonBase-root-MuiMenuItem-root .MuiListItemIcon-root {
+    min-width: 20px !important;
+}
+
+
+/**
+ * Загрузчики
+ */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader-spinner {
+    border: 2px solid #f3f3f3;
+    border-top: 1px solid #555555;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.RaSidebar-fixed {
+    & span {
+        color: #7cb2dc;
+    }
+}
+
+.css-1j2lm6d-MuiTypography-root {
+    color: #F8F8F8 !important;
+}
+
+.RaLayout-contentWithSidebar {
+    background-color: #181818;
+}
+
+.css-1k7e4ch-MuiTableCell-root {
+    color: black !important;
+}
+
+.loginLink {
+    text-transform: uppercase;
+    color: $black;
+    min-width: 270px;
+    @include font-inter(bold, 24px, 1.5);
+}
+
+.menuCollr {
+    color: #7cb2dc !important;
+}
+
+.reactEditorJS {
+    margin-left: 50px;
+    max-width: 815px;
+}
+
