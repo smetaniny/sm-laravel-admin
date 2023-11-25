@@ -1,7 +1,15 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use Smetaniny\SmLaravelAdmin\Controllers\AdminController;
+use Inertia\Inertia;
+use Illuminate\Foundation\Application;
 
-Route::prefix('/admin')->group(function () {
-    Route::get('/', [AdminController::class, 'index'])->name('admin');
+Route::prefix('/sm-admin')->group(function () {
+    Route::get('/', function () {
+        return Inertia::render('SMAdmin', [
+            'canLogin' => Route::has('login'),
+            'canRegister' => Route::has('register'),
+            'laravelVersion' => Application::VERSION,
+            'phpVersion' => PHP_VERSION,
+        ]);
+    });
 });

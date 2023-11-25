@@ -1,7 +1,8 @@
+import React, {useEffect, useState} from 'react';
+import {Admin, Resource} from 'react-admin';
 import dataProvider from "./dataProvider.jsx";
 
 const App = () => {
-    console.log('dataProvider', dataProvider);
     return (
         <Admin
             dataProvider={dataProvider}
@@ -11,4 +12,3 @@ const App = () => {
 };
 
 
-ReactDOM.render(<App />, document.getElementById('app'));

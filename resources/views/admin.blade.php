@@ -6,8 +6,6 @@
 
         @viteReactRefresh
         @vite('resources/js/app.js')
-{{--        @vite(asset('sm-laravel-admin/resources/js/app.js'))--}}
-{{--        <script type="module" src="sm-laravel-admin/resources/js/app.js"></script>--}}
     </head>
     <body class="font-sans antialiased">
         <div id="app"></div>
