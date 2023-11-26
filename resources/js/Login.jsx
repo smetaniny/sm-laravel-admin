@@ -66,8 +66,7 @@ const Login = () => {
                     minHeight: '100vh',
                     alignItems: 'center',
                     justifyContent: 'flex-start',
-                    background:
-                        'url(https://source.unsplash.com/featured/1600x900)',
+                    background: '#F8F8F8',
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                 }}
@@ -79,10 +78,7 @@ const Login = () => {
                         justifyContent: 'start',
                     }}
                     >
-                        <LinkLoad hrefRoute={'MainController'}
-                                  className="loginLink">
-                            Smetanina Kristina
-                        </LinkLoad>
+                        <a href="https://smetaniny.ru/" target="_blank" className="loginLink">Smetanina Kristina</a>
                     </Box>
                     <Box
                         sx={{

@@ -103,5 +103,10 @@ ul {
 
 }
 
+input:focus {
+    outline: none !important;
+    border-color: initial !important;
+    box-shadow: none !important;
+}
 
 

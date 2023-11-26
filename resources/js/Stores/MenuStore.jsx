@@ -1,6 +1,5 @@
 import {create} from 'zustand';
 import {devtools} from 'zustand/middleware';
-import {immer} from 'zustand/middleware/immer';
 import {useRedirect} from "react-admin";
 import {URL_API} from "../settings.jsx";
 
@@ -44,7 +43,7 @@ const toggleItem = (items, id) => {
 
 const menuStore = create(
     devtools(
-        immer((set, get) => ({
+        (set, get) => ({
             items: [],
             menu_id: null,
             handleToggle: (item) => {
@@ -98,7 +97,6 @@ const menuStore = create(
                 return search(get().items);
             },
         }))
-    )
-);
+)
 
 export default menuStore;

@@ -17,6 +17,7 @@ const LinkLoad = (
         },
     }
 ) => {
+    console.log('hrefRoute', hrefRoute);
     const [loading, setLoading] = React.useState(false);
     const handleClick = () => {
         setLoading(true);
