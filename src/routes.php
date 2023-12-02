@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 use Inertia\Inertia;
@@ -16,28 +18,50 @@ use Smetaniny\SmLaravelAdmin\Controllers\TvParamController;
 use Smetaniny\SmLaravelAdmin\Controllers\UrlGetController;
 use Smetaniny\SmLaravelAdmin\Models\Page;
 
-Route::prefix('/sm-admin')->group(function () {
-    Route::get('/', function () {
-        return Inertia::render('SMAdmin', [
-            'csrf_token' => Session::token(),
-            'success' => Session::get('success'),
-            'canLogin' => (bool) auth()->guard('admin')->user(),
-            'laravelVersion' => Application::VERSION,
-            'phpVersion' => PHP_VERSION,
-            'pages' => Page::get()->toTree(),
-        ]);
+//Страница авторизации
+//Route::get('/', function () {
+//    return Inertia::render('SMAdmin', [
+//        'csrf_token' => Session::token(),
+//        'success' => Session::get('success'),
+//        'canLogin' => (bool) auth()->guard('admin')->user(),
+//        'laravelVersion' => Application::VERSION,
+//        'phpVersion' => PHP_VERSION,
+//        'pages' => Page::get()->toTree(),
+//    ]);
+//})->name('sm-admin-login');
+
+// Пример добавления middleware для сессий в routes.php пакета
+Route::middleware(['web'])->group(function () {
+//    if (Auth::guard('admin')->attempt(['email' => "admin@example.com", 'password' => "123admin@example.comqwerty"])) {
+//        Log::error('Успешная аутентификация');
+//    } else {
+//        Log::error(' Неудачная аутентификация');
+//    }
+
+    // Ваши маршруты здесь
+    Route::prefix('/sm-admin')->group(function () {
+        Route::get('/', function () {
+            return Inertia::render('SMAdmin', [
+                'csrf_token' => Session::token(),
+                'success' => Session::get('success'),
+                'canLogin' => (bool) auth()->guard('admin')->user(),
+                'laravelVersion' => Application::VERSION,
+                'phpVersion' => PHP_VERSION,
+                'pages' => Page::get()->toTree(),
+            ]);
+        })->name('sm-admin');
     });
+
+    //Проверка авторизации
+    Route::post('/api/admin/auth_verification', [AuthVerificationController::class, 'authVerification']);
+    //Авторизация
+    Route::post('/api/admin/login', [LoginController::class, 'login']);
+    Route::post('/api/admin/logoutAdmin', [LoginController::class, 'destroy'])->name('logoutAdmin');
+    //Получение url
+    Route::post('/api/admin/urlGet', [UrlGetController::class, 'urlGet']);
 });
 
-//Страница авторизации
-//Route::get('/admin#/login', [\App\Http\Controllers\Admin\AdminController::class, 'index'])->name('adminLogin');
-//Авторизация
-Route::post('/api/admin/login', [LoginController::class, 'login']);
-Route::post('/api/admin/logoutAdmin', [LoginController::class, 'destroy'])->name('logoutAdmin');
-//Получение url
-Route::post('/api/admin/urlGet', [UrlGetController::class, 'urlGet']);
-//Проверка авторизации
-Route::post('/api/admin/auth_verification', [AuthVerificationController::class, 'authVerification']);
+
 
 //Проверка на авторизацию в админке
 Route::group(['middleware' => 'auth:admin'], function () {
@@ -60,3 +84,4 @@ Route::group(['middleware' => 'auth:admin'], function () {
         Route::post('/files/{filePath}', [FilesController::class, 'fileProcessing']);
     });
 });
+
