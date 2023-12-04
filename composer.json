@@ -37,9 +37,9 @@
         },
         "laravel": {
             "providers": [
-                "Smetaniny\\LaravelImage\\SMLaravelAdminServiceProvider"
-            ],
+                "Smetaniny\\SmLaravelAdmin\\SMLaravelAdminServiceProvider"
+            ]
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "stable"
 }
