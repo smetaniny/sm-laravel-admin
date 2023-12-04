@@ -1,16 +1,19 @@
 {
-    "name": "smetaniny/sm-laravel-admin",
-    "description": ":package_description",
+    "name": "smetaniny/sm-laravel-image",
+    "description": ":Обработка изображений laravel",
     "license": "MIT",
     "authors": [
         {
-            "name": "Author Name",
-            "email": "author@email.com",
-            "homepage": "http://author.com"
+            "name": "Smetanin Sergey",
+            "email": "sm.sergey.v@yandex.ru",
+            "homepage": "https://smetaniny.ru/"
         }
     ],
     "homepage": "https://github.com/smetaniny/sm-laravel-admin",
-    "keywords": ["Laravel", "SmLaravelAdmin"],
+    "keywords": [
+        "Laravel",
+        "SmLaravelAdmin"
+    ],
     "require": {
         "illuminate/support": "~9"
     },
@@ -29,13 +32,14 @@
         }
     },
     "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.1-dev"
+        },
         "laravel": {
             "providers": [
-                "SMLaravelAdminServiceProvider"
+                "Smetaniny\\LaravelImage\\SMLaravelAdminServiceProvider"
             ],
-            "aliases": {
-                "SmLaravelAdmin": "SMLaravelAdmin"
-            }
         }
-    }
+    },
+    "minimum-stability": "stable",
 }
