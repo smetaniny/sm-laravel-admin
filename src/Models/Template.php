@@ -5,6 +5,10 @@ namespace Smetaniny\SmLaravelAdmin\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 
+/**
+ * @method static find(int $id)
+ * @method static findOrFail(int $id)
+ */
 class Template extends BaseModel
 {
     use HasFactory;

@@ -3,6 +3,10 @@
 namespace Smetaniny\SmLaravelAdmin;
 
 use Illuminate\Support\ServiceProvider;
+use Smetaniny\SmLaravelAdmin\Contracts\ResourceShowInterface;
+use Smetaniny\SmLaravelAdmin\Services\GetAllStrategy;
+use Smetaniny\SmLaravelAdmin\Services\GetFirstStrategy;
+use Smetaniny\SmLaravelAdmin\Services\ResourceShow;
 
 class SmLaravelAdminServiceProvider extends ServiceProvider
 {
@@ -33,9 +37,12 @@ class SmLaravelAdminServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/sm-laravel-admin.php', 'sm-laravel-admin');
 
         // Register the service the package provides.
-        $this->app->singleton('sm-laravel-admin', function ($app) {
+        $this->app->singleton('sm-laravel-admin', function () {
             return new SmLaravelAdmin;
         });
+
+        $this->app->singleton(ResourceShowInterface::class, ResourceShow::class);
+        $this->app->tag([GetFirstStrategy::class, GetAllStrategy::class], 'QueryStrategyInterface');
     }
 
     /**

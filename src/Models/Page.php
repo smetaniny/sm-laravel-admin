@@ -13,6 +13,10 @@ use Kalnoy\Nestedset\NodeTrait;
 
 /**
  * @method static get()
+ * @method static find(int $id)
+ * @method static findOrFail(int $id)
+ * @method static where(string $string, mixed $alias)
+ * @method static max(string $string)
  */
 class Page extends BaseModel
 {

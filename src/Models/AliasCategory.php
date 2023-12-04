@@ -5,6 +5,9 @@ namespace Smetaniny\SmLaravelAdmin\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Kalnoy\Nestedset\NodeTrait;
 
+/**
+ * @method static where(string $string, $alias)
+ */
 class AliasCategory extends BaseModel
 {
     use HasFactory, NodeTrait;

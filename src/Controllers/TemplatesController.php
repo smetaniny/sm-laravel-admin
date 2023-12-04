@@ -2,51 +2,56 @@
 
 namespace Smetaniny\SmLaravelAdmin\Controllers;
 
+use App\Http\Requests\Admin\TemplatesRequest;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Smetaniny\SmLaravelAdmin\Models\Template;
 
 class TemplatesController extends BaseAdminController
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\JsonResponse
+     * @param Request $request
+     *
+     * @return JsonResponse
      */
-    public function index(Request $request)
+    public function index(Request $request): JsonResponse
     {
         //Получение коллекции
-        return $this->getPaginatedJsonResponse(Templates::query(), $request);
+        return $this->getPaginatedJsonResponse(Template::query(), $request);
     }
 
     /**
      * Store a newly created resource in storage.
      *
+     * @param TemplatesRequest $request
      *
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
-    public function store(TemplatesRequest $request)
+    public function store(TemplatesRequest $request): JsonResponse
     {
         $data = $request->all();
         $data['alias'] = Str::slug($data['name']);
 
-        $result = new Templates($data);
+        $result = new Template($data);
         $result->save();
 
         return $this->getJsonSuccessResponse($result, 'Успешное создание', true);
     }
 
-
     /**
      * Display the specified resource.
      *
-     * @param int $id
      *
-     * @return \Illuminate\Http\Response
+     * @param Template $template
+     *
+     * @return JsonResponse
      */
-    public function show(int $id)
+    public function show(Template $template): JsonResponse
     {
-        $result = Templates::find($id);
-        return response()->json($result);
+        return response()->json($template);
     }
 
 
@@ -56,15 +61,14 @@ class TemplatesController extends BaseAdminController
      * @param TemplatesRequest $request
      * @param int $id
      *
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
-    public function update(TemplatesRequest $request, int $id)
+    public function update(TemplatesRequest $request, Template $template): JsonResponse
     {
         $data = $request->all();
-        $pageTemplate = Templates::findOrFail($id);
-        $pageTemplate->update($data);
+        $template->update($data);
 
-        return $this->getJsonSuccessResponse($pageTemplate, 'Успешное обновление', true);
+        return $this->getJsonSuccessResponse($template, 'Успешное обновление', true);
     }
 
     /**
@@ -72,11 +76,11 @@ class TemplatesController extends BaseAdminController
      *
      * @param int $id
      *
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
-    public function destroy(int $id)
+    public function destroy(int $id): JsonResponse
     {
-        $result = Templates::findOrFail($id);
+        $result = Template::findOrFail($id);
         $result->delete();
         return response()->json(['success' => true, 'message' => 'Успешное удаление']);
     }

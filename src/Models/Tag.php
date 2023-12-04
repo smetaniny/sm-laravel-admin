@@ -4,6 +4,9 @@ namespace Smetaniny\SmLaravelAdmin\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
+/**
+ * @method static updateOrCreate(array $array)
+ */
 class Tag extends BaseModel
 {
     use HasFactory;
