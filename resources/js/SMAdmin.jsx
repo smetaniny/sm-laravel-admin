@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {Admin, Resource} from 'react-admin';
 import dataProvider from "./dataProvider";
-import {Head} from "@inertiajs/react";
-import "./Scss/app.scss"
+// import "./Scss/app.scss"
 import menuStore from "./Stores/MenuStore";
-import Layout from "./layout";
+// import Layout from "./layout";
 import i18nProvider from "./i18nProvider";
 import authProvider from "./authProvider";
 import themeReducer from "./themeReducer";
@@ -26,6 +25,8 @@ import TvParamsCategoriesEdit from "./Resource/TvParamsCategories/TvParamsCatego
 import TvParamsCategoriesCreate from "./Resource/TvParamsCategories/TvParamsCategoriesCreate";
 
 const App = (props) => {
+    console.log('props', props);
+
     // или через деструктуризацию
     const {pages} = props;
     const {setItems} = menuStore();
@@ -52,14 +53,13 @@ const App = (props) => {
     }, [props.canLogin]);
 
     return <>
-        <Head title="SM Admin" />
         {showLoader && <Loader />}
         <Admin
             dataProvider={dataProvider}
             theme={smetaninyTheme}
             i18nProvider={i18nProvider}
             customReducers={{theme: themeReducer}}
-            layout={(props) => <Layout {...props} />}
+            // layout={(props) => <Layout {...props} />}
             authProvider={authProvider(props.canLogin)}
             dashboard={Dashboard}
             loginPage={Login}

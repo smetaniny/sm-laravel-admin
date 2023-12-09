@@ -20,7 +20,7 @@ Route::middleware(['web'])->group(function () {
     // Точка входа в админку
     Route::prefix('/sm-admin')->group(function () {
         Route::get('/', function () {
-            return Inertia::render('SMAdmin', [
+            return view('sm-laravel-admin::admin', [
                 'csrf_token' => Session::token(),
                 'success' => Session::get('success'),
                 'canLogin' => (bool) auth()->guard('admin')->user(),
@@ -28,7 +28,7 @@ Route::middleware(['web'])->group(function () {
                 'phpVersion' => PHP_VERSION,
                 'pages' => Page::get()->toTree(),
             ]);
-        })->name('sm-admin');
+        })->name('sm-laravel-admin');
     });
 
     // API Роуты

@@ -2,6 +2,7 @@ import {create} from 'zustand';
 import {devtools} from 'zustand/middleware';
 import {useRedirect} from "react-admin";
 import {URL_API} from "../settings.jsx";
+import axios from 'axios';
 
 const toggleItem = (items, id) => {
     let result = items.map((item) => {

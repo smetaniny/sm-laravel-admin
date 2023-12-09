@@ -1,4 +1,5 @@
 import {AUTH_URL_API, TOKEN_URL_API} from "./settings";
+import axios from 'axios';
 
 const authProvider = (canLogin) => ({
     login: async ({username, password}) => {
