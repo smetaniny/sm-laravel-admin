@@ -1,0 +1,1434 @@
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-DreiviertelfettKursiv.woff2?c9cfca8a593c418c634e996a47d1476b) format('woff2'),
+        url(/fonts/Sohne-DreiviertelfettKursiv.woff?2f022a8d9cdcf52c67e58e1f81974a2f) format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-KraftigKursiv.woff2?1c6adafbd1bc0b7b76295aaaff9ccbe8) format('woff2'),
+        url(/fonts/Sohne-KraftigKursiv.woff?3a874150e14d9570994d3caa2c408f8b) format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-HalbfettKursiv.woff2?6aa55386fb83412e177083b890719e94) format('woff2'),
+        url(/fonts/Sohne-HalbfettKursiv.woff?e2d2c0181e9606d70cb2edaa15be2395) format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-ExtraleichtKursiv.woff2?043a14af210f5654fa1b72b9165675cb) format('woff2'),
+        url(/fonts/Sohne-ExtraleichtKursiv.woff?a89a80b1b6d7bb6a3a8464f271370aef) format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-FettKursiv.woff2?bff80622a0b42032014e988c341b137f) format('woff2'),
+        url(/fonts/Sohne-FettKursiv.woff?e94f09fcc96de01dddf7c832ee983c66) format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-Leicht.woff2?ddd63edfd1b0931bfd15c019c438f19f) format('woff2'),
+        url(/fonts/Sohne-Leicht.woff?f74a7141fb6d36bf6fac793787c399ee) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-Kraftig.woff2?41494e9c611ba6da58e35298a53d9e4d) format('woff2'),
+        url(/fonts/Sohne-Kraftig.woff?f71b9b2c93131bbe89a740a7c397c3fe) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-BuchKursiv.woff2?1b6d77080531c2dcaec344796a276566) format('woff2'),
+        url(/fonts/Sohne-BuchKursiv.woff?2664f4f7f1dbce7b7b5dbc01de3a091a) format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-Dreiviertelfett.woff2?a9c6cc6f2ced7aeeb87d0045d5ba75d3) format('woff2'),
+        url(/fonts/Sohne-Dreiviertelfett.woff?62e8ea284d7a724fed85d2bf50e64cb1) format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-Buch.woff2?aa80aff92796f2cc23c83765d4994327) format('woff2'),
+        url(/fonts/Sohne-Buch.woff?84820e8e2866af29dae219f83265fb0a) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-Extraleicht.woff2?ac38d27343c7135f0892cfb178b8d240) format('woff2'),
+        url(/fonts/Sohne-Extraleicht.woff?fe466836514530b5ab52937457dd3cf0) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-Extrafett.woff2?a7746d63466c8d7fb90eb34e14293524) format('woff2'),
+        url(/fonts/Sohne-Extrafett.woff?df30f28dc09a384aa6fa4400eebc7e5d) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-Fett.woff2?d004031540eec85aca3c8f217a24ee3d) format('woff2'),
+        url(/fonts/Sohne-Fett.woff?e24730df153e12c930cfb7fc52c77e28) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-ExtrafettKursiv.woff2?e1300c8b812d781323cd5e436a0c638e) format('woff2'),
+        url(/fonts/Sohne-ExtrafettKursiv.woff?2430f17a72944dd43b24c21dc7e0048f) format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-Halbfett.woff2?df789d5939aa2220345e9b2be3a3d32e) format('woff2'),
+        url(/fonts/Sohne-Halbfett.woff?aeb718d38df829245a9f4358e246ddf9) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url(/fonts/Sohne-LeichtKursiv.woff2?b5d39cad985ef04ecd533bcce5f6a4dd) format('woff2'),
+        url(/fonts/Sohne-LeichtKursiv.woff?d4937b652461265358027985ed2ce398) format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-ExtrafettKursiv.woff2?27abd4ba7ef32686bcecb127d793ae50) format('woff2'),
+        url(/fonts/SohneBreit-ExtrafettKursiv.woff?02255a388c8b192311fa85bf3a3110e9) format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-Dreiviertelfett.woff2?df98459ba1cef893422e67d8cbe8060f) format('woff2'),
+        url(/fonts/SohneBreit-Dreiviertelfett.woff?6406ffc48ff8f24b0f8b058049f0493f) format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-Buch.woff2?84def240311716fe25181ea17a9648f2) format('woff2'),
+        url(/fonts/SohneBreit-Buch.woff?eacc4695873b28fe8549f9bc68959a39) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-BuchKursiv.woff2?43df9827cedddb6f8f00fa07e6f9f233) format('woff2'),
+        url(/fonts/SohneBreit-BuchKursiv.woff?4641999ecb08e5b0a53f8624b7c07ee8) format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-Extrafett.woff2?11385d598e7946cb424d98a622358baa) format('woff2'),
+        url(/fonts/SohneBreit-Extrafett.woff?42925e7b0e4b8af1ce1251ca8e8b755a) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-DreiviertelfettKurs.woff2?db11f59e44231ca9ef07834c39bfbcbd) format('woff2'),
+        url(/fonts/SohneBreit-DreiviertelfettKurs.woff?2bf54d0ec5e976e082fc6950d6af59ff) format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-KraftigKursiv.woff2?d506bdb1e0e2e505b7512bf6af320c89) format('woff2'),
+        url(/fonts/SohneBreit-KraftigKursiv.woff?efcfb8da30238ffaf8819bc552fcb9b2) format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-Leicht.woff2?2eeab7970a3fd8ca2f0ab7f3baea56fb) format('woff2'),
+        url(/fonts/SohneBreit-Leicht.woff?e56f8f28ad34827ef4b6d219a4df48f6) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-HalbfettKursiv.woff2?3d75fa6396e75cf05dbaf10011e05b89) format('woff2'),
+        url(/fonts/SohneBreit-HalbfettKursiv.woff?6a179d24cfb96b942934be84c1df77a3) format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-Extraleicht.woff2?ac1a8b9147417218332d38a201d0e135) format('woff2'),
+        url(/fonts/SohneBreit-Extraleicht.woff?b893257fa2a6a58342b0b92b71706c94) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-Halbfett.woff2?bcc7f12bc924e130db6db07730b9e498) format('woff2'),
+        url(/fonts/SohneBreit-Halbfett.woff?2525ebbac2439daa035db84f0d9a8cd2) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-Kraftig.woff2?9d40ae5c6511ebd31c7469c30073d7f1) format('woff2'),
+        url(/fonts/SohneBreit-Kraftig.woff?c71c663a31899347439ec059c3156f74) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-LeichtKursiv.woff2?30e09936c7afb9f952d93c9eb34411c1) format('woff2'),
+        url(/fonts/SohneBreit-LeichtKursiv.woff?433c4b25c82eae06e03281644568340e) format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-FettKursiv.woff2?304ae96d824ee3ddfecd4c8e3e85c562) format('woff2'),
+        url(/fonts/SohneBreit-FettKursiv.woff?793d17083b3bc9d328ac90d55f1a7615) format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-Fett.woff2?fb22eb0a685a8cc19baa51ecf4eee751) format('woff2'),
+        url(/fonts/SohneBreit-Fett.woff?bbce38152518da38742e7c05b603d3c4) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url(/fonts/SohneBreit-ExtraleichtKursiv.woff2?d084d1b8c898c2c36274a0b512e2a5bf) format('woff2'),
+        url(/fonts/SohneBreit-ExtraleichtKursiv.woff?c0bfbf8d6e3b5d12eeecd2efdf22c51d) format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-Dreiviertelfett.woff2?ffd4348bd3f78ae7e9aa7aba42566f0e) format('woff2'),
+        url(/fonts/SohneMono-Dreiviertelfett.woff?f08ebcc005338305e662685ef8b4a69f) format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-DreiviertelfettKurs.woff2?eeeb4433690a723d902c6b4bc28653a7) format('woff2'),
+        url(/fonts/SohneMono-DreiviertelfettKurs.woff?e642646a38c2f3f9223be5f4a0cf258e) format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-ExtrafettKursiv.woff2?de7ed0632a9c04d39b7cc2a3fdd91470) format('woff2'),
+        url(/fonts/SohneMono-ExtrafettKursiv.woff?509564629e05f3de794a06491b4749d7) format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-BuchKursiv.woff2?ce534cd67eacbb848ff75f149e23ae0c) format('woff2'),
+        url(/fonts/SohneMono-BuchKursiv.woff?cd4eced863971524181e25e9efd99a8b) format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-Buch.woff2?5e83e969468179b83ab2dd7d8d7ee1fa) format('woff2'),
+        url(/fonts/SohneMono-Buch.woff?5d405a6a7d07acb425de64b8f3e9b0a9) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-Extrafett.woff2?3c0eb142258fccd1679b52215238158b) format('woff2'),
+        url(/fonts/SohneMono-Extrafett.woff?e7d6f3ca8f2f3c102d7bd743cd211b3e) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-ExtraleichtKursiv.woff2?64cda26c1a7afd1e27af31aaf97cd433) format('woff2'),
+        url(/fonts/SohneMono-ExtraleichtKursiv.woff?6cf7a99a03f2039610cf2190f01c715a) format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-HalbfettKursiv.woff2?89c857f7cbc94e679a60fe7b244fa336) format('woff2'),
+        url(/fonts/SohneMono-HalbfettKursiv.woff?2f04efca5f4a7738a314afb8e65180bd) format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-Extraleicht.woff2?80d395ff3b7a9f48c65bbb81edf9b840) format('woff2'),
+        url(/fonts/SohneMono-Extraleicht.woff?6cc61dce121ef60b61bdc02c2bfbca20) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-FettKursiv.woff2?a7f3b0985cf8e029c7d833f4a3bc0b1e) format('woff2'),
+        url(/fonts/SohneMono-FettKursiv.woff?cd9d2db4b5885c46654c7f73294be352) format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-KraftigKursiv.woff2?aa1a2e1e6315eade8a116649fa5abf9b) format('woff2'),
+        url(/fonts/SohneMono-KraftigKursiv.woff?f393fc550ee275d646dd131d0e5f87af) format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-Fett.woff2?939ad012435aa68c4caf6558c076b8df) format('woff2'),
+        url(/fonts/SohneMono-Fett.woff?3f01720407cbac2e1d7b8520c5d6683e) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-Leicht.woff2?b59f650e1eb6469d5eec3b3a623654ab) format('woff2'),
+        url(/fonts/SohneMono-Leicht.woff?b34c8832d2ee76261808fb964c06c725) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-LeichtKursiv.woff2?ac4d2166d3b9bc15a80738458b613218) format('woff2'),
+        url(/fonts/SohneMono-LeichtKursiv.woff?d35ea1503e805568b358976dc8569e55) format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-Halbfett.woff2?9772b8545316d7d099b509ea9e2cd8cc) format('woff2'),
+        url(/fonts/SohneMono-Halbfett.woff?200ca471c788fda173a40db3b6a6b0d5) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Mono';
+    src: url(/fonts/SohneMono-Kraftig.woff2?393b4650153d221dba6d38a284da4531) format('woff2'),
+        url(/fonts/SohneMono-Kraftig.woff?8545b4c0dd42f5dcc648524ab1458b27) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-DreiviertelfettKurs.woff2?32d9731bb9af75051637593a75401312) format('woff2'),
+        url(/fonts/SohneSchmal-DreiviertelfettKurs.woff?ef51effbf83db015b249e81919520c3e) format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-BuchKursiv.woff2?bb16352493926776133b6c7f95c857fb) format('woff2'),
+        url(/fonts/SohneSchmal-BuchKursiv.woff?df824d095e64049cb166922d3aee584c) format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-KraftigKursiv.woff2?9be8911abe9db0e8a7a02a230c2fe640) format('woff2'),
+        url(/fonts/SohneSchmal-KraftigKursiv.woff?9a10d6b234a5ca3623c26db8332bf1ec) format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-Kraftig.woff2?ae04f3a77bb48feb93682a74e72cae95) format('woff2'),
+        url(/fonts/SohneSchmal-Kraftig.woff?dbaed371278dd864722103d155020969) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-LeichtKursiv.woff2?99a65553617c2e30b31e09e1dc0dbd70) format('woff2'),
+        url(/fonts/SohneSchmal-LeichtKursiv.woff?66951ed3d805498ef2b9021f9f40d1fb) format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-Extraleicht.woff2?92448fd8bb5f4c77d48776818121af32) format('woff2'),
+        url(/fonts/SohneSchmal-Extraleicht.woff?74d84bab74addba85f766138dcc12211) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-ExtraleichtKursiv.woff2?ed00142412fe0aeae53e80f5a22e6a17) format('woff2'),
+        url(/fonts/SohneSchmal-ExtraleichtKursiv.woff?dce189bee3dfe1edf0e64e7f0fabd773) format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-Leicht.woff2?bc42bd1cf1f0c7af8ed35a1cea947af4) format('woff2'),
+        url(/fonts/SohneSchmal-Leicht.woff?55a2caaf94eb17e069bcd74550e97c8e) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-HalbfettKursiv.woff2?68ecef6e5392565fe0fd08620cc4a032) format('woff2'),
+        url(/fonts/SohneSchmal-HalbfettKursiv.woff?eb6564a01af64e5600554256260ec5cf) format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-FettKursiv.woff2?e4a882b97fc84d239dde87d2a9372404) format('woff2'),
+        url(/fonts/SohneSchmal-FettKursiv.woff?38c52b8889e130414a29c4e86e07d3db) format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-Buch.woff2?c887af9dcaf623e249eed1601442e425) format('woff2'),
+        url(/fonts/SohneSchmal-Buch.woff?62c7b0d61c8ed3627d6b0b777f422a99) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-Halbfett.woff2?6afe7813136a4c60eccd5d73e2f3981c) format('woff2'),
+        url(/fonts/SohneSchmal-Halbfett.woff?a935fa2d4a63ce838dc14056d886b381) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-ExtrafettKursiv.woff2?b58b08a29acedec826031467fa79b869) format('woff2'),
+        url(/fonts/SohneSchmal-ExtrafettKursiv.woff?adc5a698adbad9a55385201a3b36144b) format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-Extrafett.woff2?c930dbe3907224c8118b87246a0416b2) format('woff2'),
+        url(/fonts/SohneSchmal-Extrafett.woff?7b386837cea4500bd8a60566ef31c7ae) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-Dreiviertelfett.woff2?d4e89a20ef2d8ba4f3ea5bbe837fdf7c) format('woff2'),
+        url(/fonts/SohneSchmal-Dreiviertelfett.woff?e99bd9f18c54e0cb2f560e2d677e770d) format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Schmal';
+    src: url(/fonts/SohneSchmal-Fett.woff2?4c500f9bda5a09270a3223b2cbb7ef41) format('woff2'),
+        url(/fonts/SohneSchmal-Fett.woff?675c0210a35463b5ab79c63a4571d799) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Jura';
+    src: url(/fonts/Jura-SemiBold.eot?3958d8b93149daa830209de94cad1319);
+    src: local('Jura SemiBold'), local('Jura-SemiBold'),
+        url(/fonts/Jura-SemiBold.eot?3958d8b93149daa830209de94cad1319?#iefix) format('embedded-opentype'),
+        url(/fonts/Jura-SemiBold.woff2?06a2198c532c4df25311d9a7d314f2e5) format('woff2'),
+        url(/fonts/Jura-SemiBold.woff?8e787863a36b23e6a58cdc86607ee026) format('woff'),
+        url(/fonts/Jura-SemiBold.ttf?cb4be8e7fd0d115ebde746c3bebec4e2) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url(/fonts/Jura-Regular.eot?a9662b7ed8c2dc3a4acf488fd5f00257);
+    src: local('Jura Regular'), local('Jura-Regular'),
+        url(/fonts/Jura-Regular.eot?a9662b7ed8c2dc3a4acf488fd5f00257?#iefix) format('embedded-opentype'),
+        url(/fonts/Jura-Regular.woff2?762824be828c94f7fa7b945a18f2f4b3) format('woff2'),
+        url(/fonts/Jura-Regular.woff?ef94f9537654398f207daf37d32fb632) format('woff'),
+        url(/fonts/Jura-Regular.ttf?84a79ee82a95d34fdf28499813802fb5) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url(/fonts/Jura-Light.eot?ddf2c2d1d8b833f2805350cd9ef760d7);
+    src: local('Jura Light'), local('Jura-Light'),
+        url(/fonts/Jura-Light.eot?ddf2c2d1d8b833f2805350cd9ef760d7?#iefix) format('embedded-opentype'),
+        url(/fonts/Jura-Light.woff2?94d27f7733b959e7dd3ffe476c93be78) format('woff2'),
+        url(/fonts/Jura-Light.woff?834eb5c985bfbc1d6fd0f34c4c53755a) format('woff'),
+        url(/fonts/Jura-Light.ttf?779e62ef7d8dcdedbd0f911c63222da5) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url(/fonts/Jura-Bold.eot?37161042988cdd29acb9b0a987b4d845);
+    src: local('Jura Bold'), local('Jura-Bold'),
+        url(/fonts/Jura-Bold.eot?37161042988cdd29acb9b0a987b4d845?#iefix) format('embedded-opentype'),
+        url(/fonts/Jura-Bold.woff2?5df18dcbb3abc243eed73d390a6bce87) format('woff2'),
+        url(/fonts/Jura-Bold.woff?82447dc414f6aadfa44e3e1e7cab83d7) format('woff'),
+        url(/fonts/Jura-Bold.ttf?6046416b6f2bfe4c9dc06795ff097575) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url(/fonts/Jura-Medium.eot?2bbf3fc4aa1dd39385a315419cae0a57);
+    src: local('Jura Medium'), local('Jura-Medium'),
+        url(/fonts/Jura-Medium.eot?2bbf3fc4aa1dd39385a315419cae0a57?#iefix) format('embedded-opentype'),
+        url(/fonts/Jura-Medium.woff2?2dd43854d341bcd5f7291c69f1d7c8f7) format('woff2'),
+        url(/fonts/Jura-Medium.woff?aa2a40a18275c38fe6e7633537c34d3a) format('woff'),
+        url(/fonts/Jura-Medium.ttf?4b349faa8c507669652b92e89624b580) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-Black.eot?cf7b22a1988d56446d4354bd64f901e4);
+    src: url(/fonts/Inter-Black.eot?cf7b22a1988d56446d4354bd64f901e4?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-Black.woff2?7940990a3402251d80d441b4c0bcac8a) format('woff2'),
+        url(/fonts/Inter-Black.woff?6a96267c8bb7c1d6acfe0b410ccb9192) format('woff'),
+        url(/fonts/Inter-Black.ttf?530939d296997666882e7ba93c8d1768) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-SemiBold.eot?9ef61775bf51bb2e32fc3f66fe288267);
+    src: url(/fonts/Inter-SemiBold.eot?9ef61775bf51bb2e32fc3f66fe288267?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-SemiBold.woff2?31ee924c08817cb0ed871ad707b54f11) format('woff2'),
+        url(/fonts/Inter-SemiBold.woff?732b9e833a956b1adc068ca9d092aabd) format('woff'),
+        url(/fonts/Inter-SemiBold.ttf?29a0125ed397371023b08119bf92d98c) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-BoldItalic.eot?0a35077e63f63dcdfceaa5b438ae0ad3);
+    src: url(/fonts/Inter-BoldItalic.eot?0a35077e63f63dcdfceaa5b438ae0ad3?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-BoldItalic.woff2?58ff5c5e0b7ea596f80d73aedca8d475) format('woff2'),
+        url(/fonts/Inter-BoldItalic.woff?3501f2b1d9abf5f4426cb38b3bfc89fd) format('woff'),
+        url(/fonts/Inter-BoldItalic.ttf?1c702c67dce75d11680136a3104002c4) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-Regular.eot?cbf0955de7ec45b3c65e04fa84d45ef7);
+    src: url(/fonts/Inter-Regular.eot?cbf0955de7ec45b3c65e04fa84d45ef7?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-Regular.woff2?9bb354ac8acc2b10a5c48a071ec7b70c) format('woff2'),
+        url(/fonts/Inter-Regular.woff?c1d815b010d77233d34d996bb3664a6f) format('woff'),
+        url(/fonts/Inter-Regular.ttf?192d262e38ce5cd0900695ac503fa2eb) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-ExtraBold.eot?8917b7b1c229a4059367ae67dbdfc97d);
+    src: url(/fonts/Inter-ExtraBold.eot?8917b7b1c229a4059367ae67dbdfc97d?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-ExtraBold.woff2?a9ed16316d7475f0559998ca7f587a6f) format('woff2'),
+        url(/fonts/Inter-ExtraBold.woff?704d4cc869d6898faf1345ea44ce70a3) format('woff'),
+        url(/fonts/Inter-ExtraBold.ttf?ec46ba3300d34e170c3d804fbafe8a05) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-Italic.eot?85bdd47069672a53a494239296e3e068);
+    src: url(/fonts/Inter-Italic.eot?85bdd47069672a53a494239296e3e068?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-Italic.woff2?a48a73e1e05a766d1cfb66397b4b3b3d) format('woff2'),
+        url(/fonts/Inter-Italic.woff?d6d034abe75da0b4990c0fb9e78e8565) format('woff'),
+        url(/fonts/Inter-Italic.ttf?0b5c88f6c1100d614af4412e4e95ad71) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-Bold.eot?38ee452b49b0b7291436454a1ca7b186);
+    src: url(/fonts/Inter-Bold.eot?38ee452b49b0b7291436454a1ca7b186?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-Bold.woff2?7d46c8fc6f1c02ab641fb1b7400ddf8d) format('woff2'),
+        url(/fonts/Inter-Bold.woff?27908d69c98c2e9468fdc66056353071) format('woff'),
+        url(/fonts/Inter-Bold.ttf?58146af664034b50d903035fcf9ad010) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-SemiBoldItalic.eot?cdadd4f29ba9f3c3305c6b61d97fd421);
+    src: url(/fonts/Inter-SemiBoldItalic.eot?cdadd4f29ba9f3c3305c6b61d97fd421?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-SemiBoldItalic.woff2?88e2dd5eecafe07df934fd50c3194403) format('woff2'),
+        url(/fonts/Inter-SemiBoldItalic.woff?bb42e9b8ad53a2d2b3548527ff1f415d) format('woff'),
+        url(/fonts/Inter-SemiBoldItalic.ttf?ad9a7116704621ff8fbc390caa312f9a) format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-MediumItalic.eot?b9acb962ccaab583ecc401f66989e162);
+    src: url(/fonts/Inter-MediumItalic.eot?b9acb962ccaab583ecc401f66989e162?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-MediumItalic.woff2?36045ba864a46e11947ac033bebc8747) format('woff2'),
+        url(/fonts/Inter-MediumItalic.woff?9ff6efe9f2770edc08f8b2692d63da1c) format('woff'),
+        url(/fonts/Inter-MediumItalic.ttf?b6f2e8b1272238a4babc915d52e7d273) format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-Thin.eot?5a5407b1eceee5ffbb0e26636d8186de);
+    src: url(/fonts/Inter-Thin.eot?5a5407b1eceee5ffbb0e26636d8186de?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-Thin.woff2?4a9bba63b53796a8d73a4eaaa4d46d9a) format('woff2'),
+        url(/fonts/Inter-Thin.woff?023f8aae58db3565c7af72e8c6333eff) format('woff'),
+        url(/fonts/Inter-Thin.ttf?02f3e4070f79a1f625b4f44f6a7cd470) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-Light.eot?b86bef36a965675db558f49b18c5083c);
+    src: url(/fonts/Inter-Light.eot?b86bef36a965675db558f49b18c5083c?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-Light.woff2?7e181be8f692edec146229edbb40f645) format('woff2'),
+        url(/fonts/Inter-Light.woff?5325ffa31d89eb8bc7ead3457fe1b877) format('woff'),
+        url(/fonts/Inter-Light.ttf?dfa97e9c7ffb7f9f4176f92ab2fe2a08) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-ExtraBoldItalic.eot?3ebcc7c1eee29dea20d1195a084c6563);
+    src: url(/fonts/Inter-ExtraBoldItalic.eot?3ebcc7c1eee29dea20d1195a084c6563?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-ExtraBoldItalic.woff2?92c1ec7bce5126217561df2076be3b47) format('woff2'),
+        url(/fonts/Inter-ExtraBoldItalic.woff?3762d0861143f27804416f4b3e8649a9) format('woff'),
+        url(/fonts/Inter-ExtraBoldItalic.ttf?eb6af8698e0c3d650f49dc9f5fed2f48) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-Medium.eot?f024b5f14e1934a167c3901d80f7cbba);
+    src: url(/fonts/Inter-Medium.eot?f024b5f14e1934a167c3901d80f7cbba?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-Medium.woff2?282e8766d26121bd12cb8a43e7ffb953) format('woff2'),
+        url(/fonts/Inter-Medium.woff?8a12ec96aa1d664bd02aa25e03951c1f) format('woff'),
+        url(/fonts/Inter-Medium.ttf?96c35d921b4f7a00986bfdaebf034221) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-ExtraLight.eot?c689d1be86143785408e16c10287ac63);
+    src: url(/fonts/Inter-ExtraLight.eot?c689d1be86143785408e16c10287ac63?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-ExtraLight.woff2?903f552299af48f341b74f9e8a845ed3) format('woff2'),
+        url(/fonts/Inter-ExtraLight.woff?60c7d03feef031f3431a080a8cd81e56) format('woff'),
+        url(/fonts/Inter-ExtraLight.ttf?b2101626a44de38a2718394bf630d031) format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-ThinItalic.eot?9c7b0d8c491c6d097521997733d9c1db);
+    src: url(/fonts/Inter-ThinItalic.eot?9c7b0d8c491c6d097521997733d9c1db?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-ThinItalic.woff2?180bf3354df183bae91e40b8a061d345) format('woff2'),
+        url(/fonts/Inter-ThinItalic.woff?b91d2b23d96df9825bcf4bdd1a0a5414) format('woff'),
+        url(/fonts/Inter-ThinItalic.ttf?b7523de8590ab23f4008f1ed2fadb97f) format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-BlackItalic.eot?dcf819832ce385ba28d07d8747cc7065);
+    src: url(/fonts/Inter-BlackItalic.eot?dcf819832ce385ba28d07d8747cc7065?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-BlackItalic.woff2?cb85f5c8056713239db0224dd25a46d1) format('woff2'),
+        url(/fonts/Inter-BlackItalic.woff?661bbe23c854299521b62ba217b54ded) format('woff'),
+        url(/fonts/Inter-BlackItalic.ttf?85cc5b7751efcbe1759bb06ad4ce3ca9) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-LightItalic.eot?c927acca1e2e6e0ca5fc00655f171ba1);
+    src: url(/fonts/Inter-LightItalic.eot?c927acca1e2e6e0ca5fc00655f171ba1?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-LightItalic.woff2?31c70de4c9791048c5b412ff28b547e2) format('woff2'),
+        url(/fonts/Inter-LightItalic.woff?05d469461bb881404b103003604c1b6c) format('woff'),
+        url(/fonts/Inter-LightItalic.ttf?180c77bbb26820eca86b9e98c3f2a826) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter-ExtraLightItalic.eot?84829a69248758a462234ecf565a5c25);
+    src: url(/fonts/Inter-ExtraLightItalic.eot?84829a69248758a462234ecf565a5c25?#iefix) format('embedded-opentype'),
+        url(/fonts/Inter-ExtraLightItalic.woff2?ecbd1d443ceda05ab26f66c0ae15e345) format('woff2'),
+        url(/fonts/Inter-ExtraLightItalic.woff?08185c431d0695189493c8a5dfd11871) format('woff'),
+        url(/fonts/Inter-ExtraLightItalic.ttf?c629ef2613cdea34ccaf66fe87c00d96) format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter V';
+    src: url(/fonts/InterV.eot?f429cdae7f0d51d0dff7a9f607be6841);
+    src: url(/fonts/InterV.eot?f429cdae7f0d51d0dff7a9f607be6841?#iefix) format('embedded-opentype'),
+        url(/fonts/InterV.woff2?b980b9f857e002a3709caf4e6b527bbc) format('woff2'),
+        url(/fonts/InterV.woff?8911b26364bb76f062ecbab6aefc2f1a) format('woff'),
+        url(/fonts/InterV.ttf?e97f8afcf8b9eb55bd503e89cda0383b) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@charset "UTF-8";
+/**
+    Миксин для создания гибкой сетки
+
+    .some-class {
+      @include flex-grid(20px, 3);
+    }
+ */
+/**
+    Миксин для создания адаптивных изображений
+
+    .some-class {
+      @include responsive-image(400px, 300px);
+    }
+ */
+/**
+    Миксин для создания градиента
+
+    .header {
+      @include gradient(top, #fff, #ccc);
+    }
+ */
+/**
+    Центрируют элементы по горизонтали, вертикали или по обеим осям, в зависимости от переданного параметра
+
+    .my-element {
+      position: relative;
+      width: 200px;
+      height: 100px;
+      background-color: #f00;
+
+      @include align(XY);
+    }
+ */
+/**
+    Миксин для создания адаптивной верстки
+
+    @include respond-to(isMobile, $max-width: 960px) {
+        стили для планшетов с шириной не более 960px
+    }
+
+    @include respond-to(isMobile, $min-width: 1600px) {
+        стили для мониторов с шириной не менее 1600px
+    }
+ */
+/**
+    Миксин для создания кроссбраузерных свойств
+
+    .some-class {
+      @include prefix(border-radius, 5px);
+    }
+ */
+/**
+    Миксин для создания анимации
+
+    .some-class {
+      @include animation(slide-in, 1s, ease-in, 0s, infinite, alternate);
+    }
+ */
+/**
+    Задает поворот элемента на указанный угол в градусах.
+
+    .my-element {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+
+      @include rotate(45deg);
+    }
+ */
+/**
+    Миксин для создания границы с радиусом углов
+
+    .some-class {
+      @include border-radius(10px);
+    }
+ */
+/**
+    Миксин для создания тени
+
+    .some-class {
+      @include box-shadow(2px, 2px, 10px, 0px, rgba(0, 0, 0, 0.2));
+    }
+ */
+/**
+    Миксин для создания градиента на тексте
+
+    .some-class {
+      @include text-gradient(#ff5e62, #ff9966);
+    }
+ */
+/**
+    Миксин для создания градиента на фоне
+
+    .some-class {
+      @include gradient-background(#1e90ff, #00bfff);
+    }
+ */
+/**
+    Миксин для создания текстового эффекта
+
+    .some-class {
+      @include text-effect(#fff, #000, 2px, 2px);
+    }
+ */
+/**
+    Миксин для создания внутренней тени на элементе
+
+    .some-class {
+      @include inner-shadow(#000, 5px);
+    }
+ */
+/**
+    Миксин для создания эффекта размытия на элементе
+    .some-class {
+      @include blur-effect(5px);
+    }
+ */
+/**
+    Миксин для создания эффекта увеличения на элементе при наведении
+
+    .some-class {
+      @include zoom-effect(1.2);
+    }
+ */
+/**
+    Миксин для создания эффекта непрерывно движущейся полосы на элементе
+
+    .some-class {
+      @include marquee-effect(#000, #fff);
+    }
+ */
+/**
+    Миксин для создания эффекта анимированного фона на элементе
+
+    .some-class {
+      @include animated-background('path/to/image.jpg', 10s, 0s, 0 0, cover);
+    }
+ */
+/**
+    Миксин для создания анимированного градиента
+    .some-class {
+      @include animated-gradient(#ff69b4, #ff8c00);
+    }
+ */
+/**
+    Микс для создания кнопки
+
+    .btn-primary {
+      @include btn(#007bff, #fff);
+    }
+ */
+/**
+    @include font-inter(normal, 16px, 1.5);
+    @include font-inter(bold, 24px, 1.2);
+ */
+/**
+    @include font-jura(normal, 16px, 1.5);
+    @include font-jura(bold, 24px, 1.2);
+ */
+/**
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      @include inputStyles;
+      width: 100%;
+    }
+ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  height: 100%;
+}
+
+body, .MuiTypography-body1 {
+  font-family: "Jura", Arial, sans-serif !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  height: 100% !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  outline: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+div {
+  display: block;
+  position: relative;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: initial !important;
+  box-shadow: none !important;
+}
+
+h1 {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+@media (max-width: 833px) {
+  h1 {
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.1;
+  }
+}
+
+h2 {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.1;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.1;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.1;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+h5 {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.1;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+h6 {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.1;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+body {
+  margin: 0 !important;
+}
+
+.ck-editor__editable {
+  min-height: 300px;
+  height: auto;
+}
+
+pre {
+  background-color: #282c34;
+  color: white !important;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.ce-block__content, .ce-toolbar__content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.css-mp7e1w-RaRichTextInput-root, .css-8l66u2-MuiStack-root-RaLabeled-root {
+  width: 100% !important;
+}
+
+.css-mp7e1w-RaRichTextInput-root, .css-1q1uhbr-RaRichTextInput-root {
+  align-items: flex-start !important;
+}
+
+.css-qyxyi3-MuiButtonBase-root-MuiListItem-root {
+  padding-left: 0 !important;
+}
+
+.css-1pnmrwp-MuiTypography-root {
+  margin-bottom: 10px !important;
+}
+
+.MuiGrid-item {
+  margin-bottom: 10px !important;
+}
+
+.colorInput .MuiInputBase-root,
+.colorInput .MuiFormLabel-root {
+  padding-left: 10px;
+}
+
+.colorInput .MuiFormGroup-root {
+  padding-left: 15px;
+}
+
+.colorInput .MuiFormHelperText-root {
+  display: none;
+}
+
+.MuiFormHelperText-root {
+  display: none;
+}
+
+.error-text {
+  color: #ed6c02;
+  font-size: 12px;
+  margin: 4px 15px 0;
+}
+
+.css-14m5vj2-MuiSnackbar-root-RaNotification-root .RaNotification-undo {
+  color: white !important;
+}
+
+.MuiCardContent-root {
+  width: 1100px;
+}
+
+.css-1uwir8t .RaToolbar-defaultToolbar {
+  width: 1100px;
+}
+
+.css-qmvuda-MuiToolbar-root-RaToolbar-root.RaToolbar-desktopToolbar {
+  max-width: 1100px !important;
+}
+
+.css-qmvuda-MuiToolbar-root-RaToolbar-root {
+  background-color: inherit !important;
+}
+
+.css-cveggr-MuiListItemIcon-root {
+  min-width: 20px !important;
+  height: 20px !important;
+}
+
+.add-icon,
+.edit-icon {
+  visibility: hidden !important;
+}
+
+.list-item-button:hover .add-icon,
+.list-item-button:hover .edit-icon {
+  visibility: visible !important;
+}
+
+.list-item-button .MuiListItemIcon-root {
+  align-items: flex-end;
+  justify-content: start;
+}
+
+.react-resizable-handle {
+  background-image: none !important;
+}
+
+.react-resizable-handle:after {
+  content: "↔";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  color: #bdb3b3;
+}
+
+.subMenuLeft .MuiButtonBase-root {
+  font-size: 15px !important;
+  color: #F8F8F8 !important;
+  align-items: center;
+}
+.subMenuLeft .MuiButtonBase-root svg {
+  margin-right: 7px;
+}
+
+.whiteMenu {
+  color: white !important;
+}
+
+.css-qmvuda-MuiToolbar-root-RaToolbar-root.RaToolbar-desktopToolbar {
+  justify-content: space-between;
+}
+
+.css-1f8bwsm {
+  min-width: 20px !important;
+}
+
+.css-xhn3eo .MuiListItemIcon-root {
+  min-width: 20px !important;
+}
+
+.css-1elqa6g-MuiButtonBase-root-MuiMenuItem-root .MuiListItemIcon-root {
+  min-width: 20px !important;
+}
+
+/**
+ * Загрузчики
+ */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader-spinner {
+  border: 2px solid #f3f3f3;
+  border-top: 1px solid #555555;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.RaSidebar-fixed span {
+  color: #7cb2dc !important;
+}
+
+.css-1j2lm6d-MuiTypography-root {
+  color: #F8F8F8 !important;
+}
+
+.RaLayout-contentWithSidebar {
+  background-color: #181818;
+}
+
+.css-1k7e4ch-MuiTableCell-root {
+  color: black !important;
+}
+
+.loginLink {
+  text-transform: uppercase;
+  color: #181818;
+  min-width: 270px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.menuCollr {
+  color: #7cb2dc !important;
+}
+
+.reactEditorJS {
+  margin-left: 50px;
+  max-width: 815px;
+}

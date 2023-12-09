@@ -28,8 +28,8 @@ const PagesList = (props) => {
                 <TextField source="alias" label="Псевдоним" />
                 <TextField source="name" label="Имя" />
                 <TextField source="description" label="Описание" />
-                <DateField source="created_at" showTime label="Создали" />
-                <DateField source="updated_at" showTime label="Обноаили" />
+                <DateField source="created_at" showTime label="Создан" />
+                <DateField source="updated_at" showTime label="Обновлен" />
             </DatagridConfigurable>
         </Fragment>
     </List>

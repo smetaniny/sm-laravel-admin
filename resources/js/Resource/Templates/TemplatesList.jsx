@@ -26,8 +26,8 @@ const TemplatesList = (props) => (
                 <TextField source="description" label="Описание" />
                 <TextField source="header_code" label="Код в шапке" />
                 <TextField source="footer_code" label="Код в подвале" />
-                <DateField source="created_at" showTime label="Создали" />
-                <DateField source="updated_at" showTime label="Обноаили" />
+                <DateField source="created_at" showTime label="Создан" />
+                <DateField source="updated_at" showTime label="Обновлен" />
             </DatagridConfigurable>
         </Fragment>
     </List>

@@ -8,7 +8,8 @@ mix.js('resources/js/app.jsx', 'public')
     .setPublicPath('public')
     .copy('resources/fonts/', 'public/fonts')
     .alias({'@': path.join(__dirname, 'resources/js/')})
+    .sass('resources/scss/app.scss', 'public/css')
     .webpackConfig({
-        output: { uniqueName: 'laravel/smetaniny/sm-laravel-admin' },
+        output: {uniqueName: 'laravel/smetaniny/sm-laravel-admin'},
     })
     .version()
