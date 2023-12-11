@@ -2,11 +2,12 @@
 
 namespace Smetaniny\SmLaravelAdmin;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Smetaniny\SmLaravelAdmin\Contracts\ResourceShowInterface;
-use Smetaniny\SmLaravelAdmin\Services\GetAllStrategy;
-use Smetaniny\SmLaravelAdmin\Services\GetFirstStrategy;
-use Smetaniny\SmLaravelAdmin\Services\ResourceShow;
+use Smetaniny\smLaravelAdmin\Contracts\ResourceShowInterface;
+use Smetaniny\smLaravelAdmin\Services\GetAllStrategy;
+use Smetaniny\smLaravelAdmin\Services\GetFirstStrategy;
+use Smetaniny\smLaravelAdmin\Services\ResourceShow;
 
 class SmLaravelAdminServiceProvider extends ServiceProvider
 {
@@ -17,19 +18,30 @@ class SmLaravelAdminServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'smetaniny');
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        $this->loadRoutesFrom(__DIR__.'/routes.php');
+        Route::middlewareGroup('smLaravelAdmin', config('smLaravelAdmin.middleware', []));
 
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'sm-laravel-admin');
+        $this->registerResources();
+
+        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'smLaravelAdmin');
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+
+
         $this->publishes([
-            __DIR__.'/../resources' => public_path('vendor/smetaniny/sm-laravel-admin'),
-        ], ['sm-laravel-admin.assets']);
+            __DIR__ . '/../resources' => public_path('vendor/smetaniny/smLaravelAdmin'),
+        ], ['smLaravelAdmin.assets']);
 
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
             $this->bootForConsole();
         }
+    }
+
+    protected function registerResources()
+    {
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'smLaravelAdmin');
+
+        // Регистрируем маршруты Nova, подключаемые в методе registerRoutes()
+        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
     }
 
     /**
@@ -39,11 +51,11 @@ class SmLaravelAdminServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/sm-laravel-admin.php', 'sm-laravel-admin');
+        $this->mergeConfigFrom(__DIR__ . '/../config/sm-laravel-admin.php', 'smLaravelAdmin');
 
         // Register the service the package provides.
-        $this->app->singleton('sm-laravel-admin', function () {
-            return new SmLaravelAdmin;
+        $this->app->singleton('smLaravelAdmin', function () {
+            return new smLaravelAdmin;
         });
 
         $this->app->singleton(ResourceShowInterface::class, ResourceShow::class);
@@ -57,7 +69,7 @@ class SmLaravelAdminServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['sm-laravel-admin'];
+        return ['smLaravelAdmin'];
     }
 
     /**
@@ -68,8 +80,8 @@ class SmLaravelAdminServiceProvider extends ServiceProvider
     protected function bootForConsole(): void
     {
         $this->publishes([
-            __DIR__ . '/../public' => public_path('vendor/smetaniny/sm-laravel-admin'),
-        ], ['smetaniny.sm-laravel-admin']);
+            __DIR__ . '/../public' => public_path('vendor/smetaniny/smLaravelAdmin'),
+        ], ['smetaniny.smLaravelAdmin']);
 
         // Registering package commands.
         $this->commands([

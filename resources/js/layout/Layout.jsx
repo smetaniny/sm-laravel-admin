@@ -7,7 +7,6 @@ import {ResizableBox} from "react-resizable";
 import 'react-resizable/css/styles.css';
 import {isDesktop} from '../Helpers';
 
-
 const CustomSidebar = (props) => {
     const [size, setSize] = useState({width: 500, height: 100});
 

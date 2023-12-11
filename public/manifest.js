@@ -187,7 +187,7 @@
 /******/ 	/* webpack/runtime/load script */
 /******/ 	(() => {
 /******/ 		var inProgress = {};
-/******/ 		var dataWebpackPrefix = "laravel/smetaniny/sm-laravel-admin:";
+/******/ 		var dataWebpackPrefix = "vendor/smetaniny/sm-laravel-admin:";
 /******/ 		// loadScript function to load a script via script tag
 /******/ 		__webpack_require__.l = (url, done, key, chunkId) => {
 /******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
@@ -341,9 +341,14 @@
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunklaravel_smetaniny_sm_laravel_admin"] = self["webpackChunklaravel_smetaniny_sm_laravel_admin"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkvendor_smetaniny_sm_laravel_admin"] = self["webpackChunkvendor_smetaniny_sm_laravel_admin"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/nonce */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nc = undefined;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

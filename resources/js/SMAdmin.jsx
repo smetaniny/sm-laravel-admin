@@ -1,9 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Admin, Resource} from 'react-admin';
 import dataProvider from "./dataProvider";
-// import "./Scss/app.scss"
 import menuStore from "./Stores/MenuStore";
-// import Layout from "./layout";
+import Layout from "./layout";
 import i18nProvider from "./i18nProvider";
 import authProvider from "./authProvider";
 import themeReducer from "./themeReducer";
@@ -23,9 +22,13 @@ import TvParamsEdit from "./Resource/TvParams/TvParamsEdit";
 import TvParamsCategoriesList from "./Resource/TvParamsCategories/TvParamsCategoriesList";
 import TvParamsCategoriesEdit from "./Resource/TvParamsCategories/TvParamsCategoriesEdit";
 import TvParamsCategoriesCreate from "./Resource/TvParamsCategories/TvParamsCategoriesCreate";
+import { usePage } from "@inertiajs/inertia-react";
 
-const App = (props) => {
-    console.log('props', props);
+const App = () => {
+    const { props } = usePage();
+
+    // Ваши действия с данными от Inertia.js
+    console.log('Data from Inertia:', props);
 
     // или через деструктуризацию
     const {pages} = props;
@@ -59,7 +62,7 @@ const App = (props) => {
             theme={smetaninyTheme}
             i18nProvider={i18nProvider}
             customReducers={{theme: themeReducer}}
-            // layout={(props) => <Layout {...props} />}
+            layout={(props) => <Layout {...props} />}
             authProvider={authProvider(props.canLogin)}
             dashboard={Dashboard}
             loginPage={Login}
@@ -91,6 +94,5 @@ const App = (props) => {
         </Admin>
     </>
 };
-
 
 export default App;
